@@ -1,0 +1,13 @@
+
+$size: 12px;
+
+.jcf {
+	&-checkbox {
+		border: 1px solid;
+		position: relative;
+		cursor: pointer;
+		height: $size;
+		width: $size;
+		float: left;
+	}
+}

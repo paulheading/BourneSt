@@ -1,0 +1,48 @@
+
+%products {
+  &_margin {
+    margin: 0 -5px !important;
+  }
+}
+
+.product {
+  margin: 0 !important;
+  width: 25% !important;
+  padding: 5px;
+  float: left;
+
+  // &:nth-of-type(4n+1) {
+  //   clear: both !important;
+  // }
+
+  img {
+    margin: 0 auto 1rem auto !important;
+  }
+
+  h2 {
+    margin: 0 !important;
+  }
+
+  a {
+    color: $black !important;
+  }
+
+  &-thmb {
+    text-align: center;
+    padding: 5px;
+    float: left;
+    width: 10rem;
+
+    img {
+      margin-bottom: 1rem;
+    }
+
+    &s {
+      @extend %products_margin;
+    }
+  }
+
+  &s {
+    @extend %products_margin;
+  }
+}

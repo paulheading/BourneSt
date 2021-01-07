@@ -1,0 +1,202 @@
+%woof {
+  &_reset {
+    background-color: transparent !important;
+    position: relative !important;
+    float: none !important;
+    z-index: 1 !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+
+  &_label {
+    display: block !important;
+    line-height: 1;
+    float: left;
+    padding: 0;
+  }
+
+  &_li {
+    @extend %cf;
+    padding: 0 0 5px !important;
+    margin: 0 !important;
+  }
+
+  &_toggle {
+    margin: -22px 0 0;
+    height: 20px;
+
+    &_is_closed {
+      background: url("svg/nav/black/down.svg") no-repeat center right;
+      height: inherit;
+    }
+
+    &_is_opened {
+      background: url("svg/nav/black/up.svg") no-repeat center right;
+      height: inherit;
+    }
+  }
+}
+
+div.woof {
+  &_info_popup {
+    @include zeros($pos: fixed);
+    background: $white url("imgs/nav/sunburst.gif") center no-repeat;
+    background-size: 70px;
+    text-indent: -9999px;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+.woof {
+  @include border($pos: top, $path: "svg/border/black.svg");
+  @extend %medium;
+
+  &_reset_search_form {
+    margin: 20px 0 0;
+  }
+
+  &_block_html_items {
+    @extend %cf;
+    min-width: 100%;
+  }
+
+  &_submit_search_form_container {
+    margin: 0;
+
+    button {
+      @extend %button;
+    }
+  }
+
+  &_container {
+    padding: 0;
+    margin: 0;
+
+    h4 {
+      @extend %cf;
+      font-size: 1.5rem !important;
+      padding: 10px 0 3px 0;
+      line-height: 1;
+
+      a {
+        margin: -17px 0 0;
+      }
+    }
+  }
+
+  &_front_toggle {
+    @extend %woof_toggle;
+    text-indent: -9999px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+
+    &_closed {
+      @extend %woof_toggle_is_closed;
+    }
+
+    &_opened {
+      @extend %woof_toggle_is_opened;
+    }
+  }
+
+  &_container_inner_colourfilter {
+    @include border($path: "svg/border/black.svg");
+    padding: 0 0 5px;
+
+    .woof_list {
+      @extend %cf;
+      padding: 10px 0 3px 10px;
+      min-width: 100%;
+
+      li {
+        padding: 2px 0 !important;
+        width: 105px;
+        float: left;
+      }
+    }
+  }
+
+  &_list {
+    @extend %woof_reset;
+
+    li {
+      @extend %woof_li;
+    }
+
+    input {
+      float: left;
+    }
+
+    label {
+      @extend %woof_label;
+      margin: 0 0 0 7px !important;
+    }
+
+    .woof_childs_list {
+      @include border($pos: top, $path: "svg/border/black.svg");
+      @extend %woof_reset;
+      @extend %cf;
+      padding: 10px 0 3px 10px !important;
+      min-width: 100% !important;
+      margin: 0 !important;
+      clear: both;
+
+      li {
+        @extend %woof_li;
+        padding: 2px 0 !important;
+        width: 160px;
+        float: left;
+      }
+
+      label {
+        margin: 0 0 0 7px !important;
+        font-weight: 400;
+      }
+
+      &_li {
+        @include border($path: "svg/border/black.svg");
+        @extend %woof_li;
+        clear: both;
+
+        > input {
+          display: none;
+        }
+
+        > label {
+          margin: 0 !important;
+          padding: 6px 0 3px 0;
+        }
+
+        label {
+          @extend %woof_label;
+        }
+
+        a {
+          @extend %woof_toggle;
+          background: none !important;
+          display: block !important;
+          padding: 0 !important;
+          position: relative;
+          float: right;
+          width: 100%;
+
+          span {
+            display: block;
+            width: 100%;
+
+            &.woof_is_closed {
+              @extend %woof_toggle_is_closed;
+            }
+
+            &.woof_is_opened {
+              @extend %woof_toggle_is_opened;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+
+.handheld-navigation {
+	text-align: center;
+	transition: none;
+	max-height: none;
+
+	@extend %menu-svg;
+
+  ul.menu {
+		background-color: lighten($black,12%);
+		padding: 20px 0;
+
+    li {
+      padding: 5px 20px;
+      font-size: 1.5rem;
+
+      &.current_page_item {
+        background-color: lighten($black,20%);
+      }
+    }
+  }
+}

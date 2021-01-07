@@ -1,0 +1,57 @@
+
+.page-template {
+
+  &:not(.home) {
+    .site-content {
+      max-width: $total * 0.65;
+    }
+  }
+
+  &-home {
+    height: 100%;
+
+    .site {
+      height: 100%;
+
+      &-header {
+        @media#{$max767} {
+          @include zeros($b:auto);
+        }
+      }
+
+      &-content {
+        height: 100%;
+
+        .col-full {
+          height: 100%;
+          padding: 0;
+        }
+      }
+    }
+
+    .content-area {
+      height: 100%;
+    }
+  }
+
+  &-about {
+    .site-main {
+
+      .slick, > img {
+        + p {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  &-terms {
+    h4 {
+      text-transform: uppercase;
+    }
+  }
+}
+
+html {
+  height: 100%;
+}

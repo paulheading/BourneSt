@@ -1,0 +1,36 @@
+
+.main-navigation {
+	width: 100% !important;
+	margin: 0 !important;
+
+	&.toggled .handheld-navigation {
+		max-height: none;
+	}
+
+	@media#{$min768} {
+		padding-bottom: 40px;
+	}
+
+	ul {
+		margin: 0 !important;
+
+		li {
+			display: block;
+
+			&.current-menu-item {
+				a {
+					color: $white !important;
+				}
+			}
+
+			a {
+				color: $gray !important;
+				padding: 0 !important;
+
+				&:hover {
+					color: $white !important;
+				}
+			}
+		}
+	}
+}

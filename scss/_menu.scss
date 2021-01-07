@@ -1,0 +1,24 @@
+
+.menu {
+
+	&-upper-menu-container {
+		@extend %cf;
+	}
+
+	&-item {
+
+		&-1205 {
+			text-indent: -9999px;
+		}
+
+		&-1224 {
+			@media#{$min768} {
+				margin-bottom: 2rem;
+			}
+		}
+
+		&-7069 {
+			display: none !important;
+		}
+	}
+}

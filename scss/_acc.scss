@@ -1,0 +1,19 @@
+
+.acc {
+
+  &-btn {
+    @include border( $path : 'svg/border/black.svg' );
+    @extend %cf;
+    padding: 2rem 0 5px 0;
+    cursor: pointer;
+  }
+
+  &-panel {
+    padding-top: 1rem;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+
+.open {
+  float: left;
+
+  &._day {
+    min-width: 15rem;
+    clear: both;
+  }
+}

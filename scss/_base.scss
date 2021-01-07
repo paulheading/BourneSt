@@ -1,0 +1,116 @@
+
+%h {
+  &_setup {
+    @extend %medium;
+    letter-spacing: 0.01em;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @extend %light;
+  background-color: $light;
+  letter-spacing: 0.01em;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: $black;
+}
+
+h1 {
+  @extend %h_setup;
+  font-size: 3.2rem !important;
+}
+
+h2 {
+  @extend %h_setup;
+  font-size: 2.4rem !important;
+
+  + p, + h4 {
+    margin-top: 2rem;
+  }
+}
+
+h3 {
+  @extend %h_setup;
+  font-size: 2.1rem !important;
+}
+
+h4 {
+  @extend %h_setup;
+  font-size: 1.8rem !important;
+
+  + p {
+    margin-top: 1rem;
+  }
+}
+
+h5 {
+  @extend %h_setup;
+  font-size: 1.3rem !important;
+}
+
+p {
+  margin: 0;
+
+  + h2, + h4, + p, + img, + .slick, + .table {
+    margin-top: 2rem;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+img {
+  border-radius: 0;
+}
+
+input {
+  @extend %light;
+
+  &[type="checkbox"] {
+    cursor: pointer;
+  }
+}
+
+a {
+  color: inherit;
+}
+
+a, input, textarea, button {
+  &:focus {
+    outline: 0;
+  }
+}
+
+b, strong {
+  @extend %medium;
+
+  i, em {
+    @extend %mediumItalic;
+  }
+}
+
+i, em {
+  @extend %lightItalic;
+}
+
+ul, ol {
+  list-style-position: outside;
+  margin: 0;
+
+  + h3 {
+    margin-top: 0;
+  }
+}
+
+form {
+  margin: 0;
+}

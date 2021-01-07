@@ -1,0 +1,26 @@
+
+.site-branding {
+  width: 100% !important;
+  float: none !important;
+  clear: both !important;
+  margin: 0 !important;
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+  @media#{$max767} {
+    display: none;
+  }
+
+  a {
+    background: url('imgs/logos/howebournest.png') center no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+    font-size: 1px;
+    display: block;
+    height: 100px;
+  }
+
+  .site-description {
+    font-size: 0;
+  }
+}

@@ -1,0 +1,83 @@
+
+.page {
+
+  &-description {
+    padding: 0 5px;
+  }
+
+  &-area {
+    margin-right: -1rem;
+    margin-left: -1rem;
+    position: relative;
+
+    &._terms {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    + .slick._slim {
+      margin-top: 2rem;
+    }
+
+    + .page-area {
+      margin-top: 2rem;
+
+      &._terms {
+        @include dots(top);
+        padding-top: 2rem;
+      }
+    }
+  }
+
+  &-img {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    float: left;
+		width: 100%;
+
+		&._hero {
+      margin-bottom: 2rem;
+
+      @media#{$min1024} {
+        margin-bottom: 0;
+  			width: 35%;
+      }
+
+      .avatar {
+        background: url('imgs/chris.jpg') top 25% center no-repeat;
+        background-size: cover;
+
+        &._mob {
+          height: 25rem;
+
+          @media#{$min768} {
+            height: 30rem;
+          }
+        }
+      }
+		}
+  }
+
+	&-txt {
+		padding-right: 1rem;
+		padding-left: 1rem;
+		float: left;
+		width: 100%;
+
+		&._hero {
+
+      @media#{$min1024} {
+        width: 65%;
+      }
+
+      > p:first-of-type {
+    		@extend %medium;
+    		font-size: 120%;
+
+    		em {
+     			@extend %mediumItalic;
+    		}
+    	}
+		}
+	}
+}

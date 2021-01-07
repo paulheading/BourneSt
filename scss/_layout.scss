@@ -1,0 +1,20 @@
+.bournest-inline,
+.howe-inline {
+	max-width: 22rem;
+}
+
+.open-days {
+	min-width: 12rem;
+}
+
+.top-content {
+	margin-bottom: 3rem;
+}
+
+.details-list {
+	width: 100%;
+	@media#{$min570max1023} {
+		padding-right: 2rem;
+		width: 50%;
+	}
+}

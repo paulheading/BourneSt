@@ -1,0 +1,1 @@
+<svg version="1.1" class="plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="18" height="18" viewBox="0 0 18 18" xml:space="preserve" enable-background="new 0 0 18 18"><polygon points="18,7.5 10.5,7.5 10.5,0 7.5,0 7.5,7.5 0,7.5 0,10.5 7.5,10.5 7.5,18 10.5,18 10.5,10.5 18,10.5"/></svg>

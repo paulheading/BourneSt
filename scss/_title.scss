@@ -1,0 +1,32 @@
+
+.title {
+
+	&._main {
+		@extend %title_main;
+	}
+
+	&._sub {
+		@extend %title_sub;
+	}
+
+	&._thmb {
+		@extend %medium;
+		text-transform: uppercase;
+		line-height: 1.15;
+
+		&-col {
+			@extend %light;
+			line-height: 1.15;
+	    color: $slate;
+		}
+	}
+
+	&._acc {
+		float: left;
+	}
+}
+
+.title._open {
+	@extend %light;
+	margin-bottom: 1rem;
+}

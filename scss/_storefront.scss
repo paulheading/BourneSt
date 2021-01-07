@@ -1,0 +1,40 @@
+@mixin restyle-header {
+  text-align: left;
+  padding: 0;
+
+  // overide storefront
+  h1:last-child {
+    margin-bottom: 2rem;
+  }
+
+  @media #{$min768} {
+    padding-bottom: 3rem;
+  }
+}
+
+.storefront-full-width-content {
+  .woocommerce-products-header {
+    text-align: inherit;
+  }
+  &.woocommerce-cart .entry-header {
+    @include restyle-header;
+  }
+  &.woocommerce-checkout .entry-header {
+    @include restyle-header;
+  }
+}
+
+.storefront {
+  &-sorting {
+    margin-bottom: 0 !important;
+  }
+
+  &-primary-navigation {
+    padding: 0;
+    margin: 0;
+
+    @media #{$min768} {
+      position: relative;
+    }
+  }
+}

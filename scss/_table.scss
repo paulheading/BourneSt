@@ -1,0 +1,27 @@
+
+.table {
+  border-bottom: 1px solid $light;
+  border-right: 1px solid $light;
+  border-left: 1px solid $light;
+  display: table;
+  width: 100%;
+
+  &-row {
+    display: table-row;
+
+    > div {
+      border-top: 1px solid $light;
+      vertical-align: middle;
+      display: table-cell;
+      padding: 1rem;
+
+      &.--center {
+        text-align: center;
+      }
+
+      + div {
+        border-left: 1px solid $light;
+      }
+    }
+  }
+}

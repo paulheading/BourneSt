@@ -1,0 +1,34 @@
+.secondary-navigation {
+  margin: 0 0 2rem !important;
+  width: 100% !important;
+  line-height: inherit;
+
+  ul {
+    li {
+      display: block;
+
+      &.current-menu-item {
+        a {
+          color: $white !important;
+        }
+      }
+
+      a {
+        color: inherit !important;
+
+        &:hover {
+          color: $white !important;
+        }
+      }
+    }
+  }
+
+  .menu {
+    font-size: inherit;
+    width: 100%;
+
+    a {
+      padding: 0;
+    }
+  }
+}

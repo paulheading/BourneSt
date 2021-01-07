@@ -1,0 +1,40 @@
+.col {
+  &-full {
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  &-main {
+    width: 100%;
+
+    @media #{$max1023} {
+      + .col-side {
+        margin-top: 20px;
+      }
+    }
+
+    @media #{$min1024} {
+      padding-right: 20px;
+      float: left;
+      width: 65%;
+    }
+  }
+
+  &-side {
+    width: 100%;
+
+    @media #{$min1024} {
+      float: left;
+      width: 35%;
+    }
+  }
+
+  &-extra {
+    clear: both;
+
+    .title._sub {
+      padding-top: 20px;
+    }
+  }
+}

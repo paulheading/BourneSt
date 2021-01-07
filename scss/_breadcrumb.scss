@@ -1,0 +1,24 @@
+
+.breadcrumb {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  color: $slate;
+
+  a {
+    color: $slate;
+  }
+
+  span.home {
+    a, + span.spacer {
+      color: $black;
+    }
+  }
+
+  span.all-textiles, span.all-leather, span.all-trimmings, span.all-vintage-textiles, span.all-wallpaper {
+    display: none;
+
+    + span.spacer {
+      display: none;
+    }
+  }
+}

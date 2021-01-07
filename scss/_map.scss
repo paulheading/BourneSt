@@ -1,0 +1,27 @@
+
+.map {
+  position: relative;
+  clear: both;
+
+  &-overlay {
+    background-color: rgba($white,.6);
+    position: absolute;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    top: 0;
+  }
+}
+
+.map-area {
+	position: relative;
+
+	&__overlay {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		background-color: rgba(#fbf8f2,0.6);
+		cursor: pointer;
+	}
+}

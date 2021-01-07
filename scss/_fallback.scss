@@ -1,0 +1,10 @@
+
+html {
+  &.no-js, &.no-rgba, &.no-backgroundsize, &.no-opacity, &.no-fontface, &.no-svg, &.no-inlinesvg {
+    background-image: url('imgs/fallback.jpg');
+
+    body {
+      display: none;
+    }
+  }
+}

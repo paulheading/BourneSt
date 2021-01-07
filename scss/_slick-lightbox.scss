@@ -1,0 +1,108 @@
+
+%fix {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.slick {
+
+  &-lightbox {
+    @extend %fix;
+    transition: opacity 0.3s ease;
+    background: black;
+    z-index: 9999;
+
+    &-hide {
+      opacity: 0;
+
+      &-init {
+        position: absolute;
+        top: -9999px;
+        opacity: 0;
+      }
+    }
+
+    &-inner {
+      @extend %fix;
+    }
+
+    &-slick-item {
+      @extend %center;
+      text-align: center;
+      overflow: hidden;
+
+      &-inner {
+        @extend %ib;
+        max-width: calc(100% - 0.25em);
+      }
+    }
+
+    &-slick {
+
+      &-img {
+        max-width: calc(100% - 0.25em);
+        display: block;
+        margin: 0 auto;
+      }
+
+      &-caption {
+        @extend %ib;
+        margin-top: 1rem;
+        color: white;
+      }
+    }
+
+    &-close {
+      @include zeros(absolute,3rem,3rem,auto,auto);
+      color: transparent;
+      background: black;
+      cursor: pointer;
+      line-height: 0;
+      display: block;
+      font-size: 0;
+      border: none;
+      height: 6rem;
+      width: 6rem;
+      padding: 0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      background-color: transparent;
+
+      &.slick-lightbox-close {
+        background: url("svg/nav/close.svg") center no-repeat;
+        z-index: 10;
+      }
+
+      &:active {
+        background-size: 90%;
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &-next {
+    right: 3rem;
+  }
+
+  &-prev {
+    left: 3rem;
+  }
+
+  &-loading {
+
+    .slick-list {
+      background-color: transparent;
+    }
+  }
+}

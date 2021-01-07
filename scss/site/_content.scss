@@ -1,0 +1,48 @@
+
+.site-content {
+	background-color: $white;
+	width: 100%;
+
+	@media#{$min768} {
+		width: calc(100% - #{$side});
+		margin-left: $side;
+		max-width: $total;
+	}
+
+	&:before {
+		display: none;
+	}
+
+	ul:not([class]) {
+		padding: 20px 0 20px 20px;
+	}
+
+	.col-full {
+    padding: 0 2rem;
+	}
+
+	.woof_container_product_cat {
+		ul.woof_list {
+			list-style: none;
+			padding: 0;
+		}
+	}
+
+	.jcf {
+		&-checkbox {
+			border-color: $black;
+
+			&.jcf-checked {
+				background-color: $black;
+			}
+		}
+	}
+
+	.woof {
+		padding-bottom: 2rem;
+
+		@media#{$min768} {
+      display: none;
+    }
+	}
+}

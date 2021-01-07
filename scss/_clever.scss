@@ -1,0 +1,53 @@
+
+.clever {
+
+  &-pic {
+    background: url('imgs/chris.jpg') top 25% center no-repeat;
+    background-size: cover;
+
+    + .clever-copy {
+      margin-top: 2rem;
+    }
+
+    @media#{$max1023} {
+      padding: 45% 0 0;
+
+      @media#{$max479} {
+        padding: 70% 0 0;
+      }
+    }
+
+    @media#{$min1024} {
+      display: table-cell;
+      width: 35%;
+
+      + .clever-copy {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &-copy {
+    @media#{$min1024} {
+      display: table-cell;
+      padding: 0 2rem;
+      width: 65%;
+    }
+
+    > p:first-of-type {
+      @extend %p_first;
+    }
+  }
+
+  &-box {
+    @media#{$min1024} {
+      max-width: 1200px;
+      display: table;
+      margin: 0 auto;
+    }
+
+    + p {
+      margin-top: 2rem;
+    }
+  }
+}
