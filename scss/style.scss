@@ -98,17 +98,25 @@ table.cart {
 }
 
 .details-box {
-  border-bottom: 4px solid $black;
+  border-bottom: 0.4rem solid $black;
   background-color: $light;
-  padding: 20px;
+  padding: 2rem;
 
   ul {
-    padding: 20px 0 0;
+    padding: 2rem 0 0;
     list-style: none;
   }
 
   h3 {
     text-transform: uppercase;
+  }
+
+  h4 {
+    margin-top: 2rem;
+  }
+
+  p + p {
+    margin-top: 1rem;
   }
 
   .awdr-bulk-customizable-table {
@@ -154,12 +162,26 @@ button.menu-toggle {
   }
 }
 
-.bulk-discount {
-  &__info {
-    margin-top: 2rem;
+@mixin row-padding {
+  padding: 0.75em 1.25em;
+}
 
-    p + p {
-      margin-top: 1rem;
+.awdr-bulk-customizable-table {
+  margin-top: 2rem;
+
+  table {
+    &:not(.has-background) {
+      th,
+      tbody td {
+        background-color: transparent;
+      }
     }
+    td {
+      @include row-padding;
+    }
+  }
+
+  .wdr_bulk_table_thead th {
+    @include row-padding;
   }
 }

@@ -731,11 +731,15 @@ table.cart td.actions { border-top-color: #fafafa; }
 
 .terms-block + .terms-block > .terms-border-cont .terms-border { background: url("svg/border/black.svg") repeat-x top; height: 4px; }
 
-.details-box { border-bottom: 4px solid #000000; background-color: #ebebeb; padding: 20px; }
+.details-box { border-bottom: 0.4rem solid #000000; background-color: #ebebeb; padding: 2rem; }
 
-.details-box ul { padding: 20px 0 0; list-style: none; }
+.details-box ul { padding: 2rem 0 0; list-style: none; }
 
 .details-box h3 { text-transform: uppercase; }
+
+.details-box h4, .details-box .nf-form-cont #nf-field-11-wrap, .nf-form-cont .details-box #nf-field-11-wrap { margin-top: 2rem; }
+
+.details-box p + p { margin-top: 1rem; }
 
 .details-box .awdr-bulk-customizable-table { display: none; }
 
@@ -749,8 +753,12 @@ button.menu-toggle:before, button.menu-toggle:after, button.menu-toggle span { d
 
 .lnk.mobile-menu img { max-width: 100%; height: auto; }
 
-.bulk-discount__info { margin-top: 2rem; }
+.awdr-bulk-customizable-table { margin-top: 2rem; }
 
-.bulk-discount__info p + p { margin-top: 1rem; }
+.awdr-bulk-customizable-table table:not(.has-background) th, .awdr-bulk-customizable-table table:not(.has-background) tbody td { background-color: transparent; }
+
+.awdr-bulk-customizable-table table td { padding: 0.75em 1.25em; }
+
+.awdr-bulk-customizable-table .wdr_bulk_table_thead th { padding: 0.75em 1.25em; }
 
 /*# sourceMappingURL=style.css.map */

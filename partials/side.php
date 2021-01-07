@@ -73,14 +73,24 @@
 	$get = 'average_skin_size'; $title = 'Average skin size';
 	include locate_template("partials/side/field.php");
 
+	global $product;
+
+	$price = $product->get_price_html();
+
+	if(!empty($price)) {
+		echo "<li class='product_name'>Price: <strong>"; echo $price; echo "</strong></li>";
+	}
+	
+	echo '</ul>';
+
+	$get = 'details_notes';
+
 	if (is_plugin_active('advanced-custom-fields-pro/acf.php')) {
-		if (get_field('product_type') == 'Face Masks') {
-			echo '<div class="bulk-discount__info"><h4>Buy a few masks & pay a lower price!</h4>
-						<p>Mix & match across our different patterns. Add them to your basket & the discount will apply automatically.</p>
-						<p>Prices listed are per mask & include VAT & delivery within the UK with Royal Mail</p></div>';
+		if (!empty(get_field($get))) {
+			echo the_field($get);
 		}
 	}
 
-	echo '</ul></div>';
+	echo '</div>';
 
 ?>
