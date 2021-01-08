@@ -737,11 +737,9 @@ table.cart td.actions { border-top-color: #fafafa; }
 
 .details-box h3 { text-transform: uppercase; }
 
-.details-box h4, .details-box .nf-form-cont #nf-field-11-wrap, .nf-form-cont .details-box #nf-field-11-wrap { margin-top: 2rem; }
-
 .details-box p + p { margin-top: 1rem; }
 
-.details-box .awdr-bulk-customizable-table { display: none; }
+.details-box .product-notes { margin-top: 2rem; }
 
 button.menu-toggle { background-color: #000000 !important; font-size: 1.5rem; border-radius: 0; max-width: none; padding: 30px; border: none; width: 100%; float: none; }
 

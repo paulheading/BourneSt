@@ -73,21 +73,30 @@
 	$get = 'average_skin_size'; $title = 'Average skin size';
 	include locate_template("partials/side/field.php");
 
-	global $product;
+	if (get_field('product_type') == 'Face Masks') {
+		
+		global $product;
 
-	$price = $product->get_price_html();
+		$price = $product->get_price_html();
 
-	if(!empty($price)) {
-		echo "<li class='product_name'>Price: <strong>"; echo $price; echo "</strong></li>";
+		if(!empty($price)) {
+			echo "<li class='product_name'>Price: <strong>"; echo $price; echo "</strong></li>";
+		}
+
+	} else {
+		$get = 'product_price'; $title = 'Price';
+		include locate_template("partials/side/field.php");
 	}
-	
+
 	echo '</ul>';
 
 	$get = 'details_notes';
 
 	if (is_plugin_active('advanced-custom-fields-pro/acf.php')) {
 		if (!empty(get_field($get))) {
+			echo '<div class="product-notes">';
 			echo the_field($get);
+			echo '</div>';
 		}
 	}
 
