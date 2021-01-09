@@ -181,3 +181,7 @@ button.menu-toggle {
     @include row-padding;
   }
 }
+
+.post-edit-link {
+  display: none;
+}

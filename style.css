@@ -759,4 +759,6 @@ button.menu-toggle:before, button.menu-toggle:after, button.menu-toggle span { d
 
 .awdr-bulk-customizable-table .wdr_bulk_table_thead th { padding: 0.75em 1.25em; }
 
+.post-edit-link { display: none; }
+
 /*# sourceMappingURL=style.css.map */

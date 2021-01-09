@@ -73,7 +73,7 @@
 	$get = 'average_skin_size'; $title = 'Average skin size';
 	include locate_template("partials/side/field.php");
 
-	if (get_field('product_type') == 'Face Masks') {
+	if (get_field('product_type') == 'Face Mask') {
 		
 		global $product;
 

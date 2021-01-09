@@ -85,6 +85,7 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
 
 add_action( 'wp_head', 'move_storefront_messages' );
 add_action( 'bournest_before_single_product_summary', 'woocommerce_template_single_title', 5);
