@@ -47,7 +47,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 		the_field('product_name');
 		echo '</h5><h5 class="title _thmb-col">';
 
-		if (get_field('product_type') == 'Face Masks') {
+		if (get_field('product_type') == 'Face Mask') {
 			the_field('product_fabric');
 		} else {
 			the_field('product_colour');

@@ -1,5 +1,5 @@
-let $ = jQuery.noConflict(),
-  resizeTimer;
+const $ = jQuery.noConflict();
+let resizeTimer;
 
 const Site = {
   load: ".load-area",

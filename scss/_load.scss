@@ -1,17 +1,13 @@
+.load-area {
+  @include zeros($pos: fixed);
+  @extend %center;
+  background-color: $white;
+  text-align: center;
+  z-index: 999;
 
-.load {
-
-  &-area {
-    @include zeros($pos:fixed);
-    @extend %center;
-    background-color: $white;
-    text-align: center;
-    z-index: 999;
-
-    &-status {
-      @extend %ib;
-      height: 70px;
-      width: 70px;
-    }
+  &-status {
+    @extend %ib;
+    height: 70px;
+    width: 70px;
   }
 }
