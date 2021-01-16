@@ -112,7 +112,7 @@ if (is_plugin_active('advanced-custom-fields-pro/acf.php')) : ?>
 
 	<div class="wrap contact-subscribe">
 		<div class="block contact-subscribe">
-			<?php echo do_shortcode('[ninja_form id=3]'); ?>
+			<!-- echo do_shortcode('[ninja_form id=3]'); -->
 		</div>
 	</div>
 
