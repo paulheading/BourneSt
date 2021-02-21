@@ -20,7 +20,7 @@ if (is_plugin_active('advanced-custom-fields-pro/acf.php')) : ?>
 				include locate_template("partials/contact/split.php"); ?>
 
 				<div class="block contact-shop-methods">
-					<p>Telephone +44 (0) 7756 348 798</p>
+					<p>Telephone +44 (0) 20 7730 7991</p>
 					<p><a href="mailto:Howe@36BourneStreet.com">Howe@36BourneStreet.com</a></p>
 					<p><a target="_blank" href="https://www.36BourneStreet.com">www.36BourneStreet.com</a></p>
 					<p>Instagram: <a target="_blank" href="https://www.instagram.com/howe36bournestreet/">Howe36BourneStreet</a></p>
