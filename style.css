@@ -739,7 +739,11 @@ table.cart td.actions { border-top-color: #fafafa; }
 
 .details-box p + p { margin-top: 1rem; }
 
-.details-box .product-notes { margin-top: 2rem; }
+.details-box .product_colour, .details-box .useable_fabric_width { margin-bottom: 1rem; }
+
+.details-box .product_price, .details-box .product-notes { margin-top: 2rem; }
+
+.details-box a { text-decoration: underline; }
 
 button.menu-toggle { background-color: #000000 !important; font-size: 1.5rem; border-radius: 0; max-width: none; padding: 30px; border: none; width: 100%; float: none; }
 

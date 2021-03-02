@@ -115,8 +115,18 @@ table.cart {
     margin-top: 1rem;
   }
 
+  .product_colour,
+  .useable_fabric_width {
+    margin-bottom: 1rem;
+  }
+
+  .product_price,
   .product-notes {
     margin-top: 2rem;
+  }
+
+  a {
+    text-decoration: underline;
   }
 }
 
