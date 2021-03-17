@@ -49,6 +49,12 @@
 	$get = 'repeat_size'; $title = 'Repeat size';
 	include locate_template("partials/side/field.php");
 
+	if (get_field('product_type') == 'New Fabric Range'   		 || 
+			get_field('product_type') == 'New Fabric General' 		 || 
+			get_field('product_type') == 'Antique Fabric General'  ||
+			get_field('product_type') == 'Antique Fabric by Metre' ||
+			get_field('product_type') == 'Antique Fabric Object' ) { include locate_template("partials/side/rub-count.php"); }
+
 	$get = 'roll_width'; $title = 'Roll width';
 	include locate_template("partials/side/field.php");
 
@@ -67,11 +73,19 @@
 	$get = 'available_in_increments_of'; $title = 'Available in increments of';
 	include locate_template("partials/side/field.php");
 
+	if (get_field('product_type') == 'Piping') { include locate_template("partials/side/rub-count.php"); }
+
 	$get = 'skins_range'; $title = 'Skins range from';
 	include locate_template("partials/side/field.php");
 
 	$get = 'average_skin_size'; $title = 'Average skin size';
 	include locate_template("partials/side/field.php");
+
+	if (get_field('product_type') == 'Goat'  		|| 
+			get_field('product_type') == 'Nappa' 		|| 
+			get_field('product_type') == 'Tempesti' ||
+			get_field('product_type') == 'Gotland'  ||
+			get_field('product_type') == 'Merino' ) { include locate_template("partials/side/rub-count.php"); }
 
 	if (get_field('product_type') == 'Face Mask') {
 		

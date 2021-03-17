@@ -739,7 +739,7 @@ table.cart td.actions { border-top-color: #fafafa; }
 
 .details-box p + p { margin-top: 1rem; }
 
-.details-box .product_colour, .details-box .useable_fabric_width { margin-bottom: 1rem; }
+.details-box .product_colour, .details-box .repeat_size, .details-box .fire_retardency, .details-box .average_skin_size, .details-box .available_in_increments_of { margin-bottom: 1rem; }
 
 .details-box .product_price, .details-box .product-notes { margin-top: 2rem; }
 
